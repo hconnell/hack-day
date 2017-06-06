@@ -1,3 +1,44 @@
+<head>
+	<script type="text/javascript">
+	/* v1.3 */
+	window.IntentMediaProperties = {  
+	
+	/* Page identification parameters */
+	site_name: 'PPN_DEMO_SITE',			/* Unique ID for the site where the tag is firing - all CAPS, no spaces, no special characters E.G.:'MYSITE_US' - Required */
+	page_id: 'flight.list',				/* Unique ID for each page where the tag is firing - Required */
+	site_country: 'US',		/* 2 letter ISO country code of the website version that was loaded - Required */
+	site_language: 'en',		/* 2 letter ISO code for the language the website page is rendered in - Required */
+	site_currency: 'USD',		/* 3 letter ISO currency code for the transaction - Required */
+	/*  Generic search parameters */
+	travel_date_start: '20170801',	/* Travel start date - required format YYYYMMDD - Strongly Preferred */
+	travel_date_end: '20170803',	/* Travel end date - required format YYYYMMDD (for oneway flights set to same as travel start date) - Strongly Preferred */
+	travelers: '2',	                /* Total number of travelers (adults+children+seniors). Integer value greater than 0 */
+ 
+	/* Flight search parameters */
+	trip_type: 'roundtrip', 	                /* roundtrip/oneway (do not traffic tag on multicity searches) - Required */
+	flight_origin: 'lax',		/* 3 letter airport code - Origin - Required */
+	flight_destination: 'sea',	/* 3 letter airport code - Destination - Required */
+
+		
+	};
+	(function() {
+	var script = document.createElement("script");
+	var url = 'http://a.cdn.intentmedia.net/javascripts/v1/intent_media_core.js';
+	script.src = url;
+	script.async = true;
+	document.getElementsByTagName("head")[0].appendChild(script);
+	}());
+	</script>
+	</head>
+<title>A Test Page</title>	
 <h1>HELLO HACKERY WORLD</h1>
-<p>My name is hconnell or in the real world that is Heather</p>
-<p>it is a little bit crazy that this is my first attempt at playing with GitHub don't you think?</p>
+<h2>This is a test page</h2>
+<body>
+<h1>A Test Page</h1>
+<li>Intercard 1</li>
+<div id='IntentMediaIntercard1' width='500px'></div>
+<li>Intercard2</li>
+<div id='IntentMediaIntercard2' width='500px'></div>
+<li>Rail</li>
+<div id="IntentMediaRail" width=200px></div>
+</body>
