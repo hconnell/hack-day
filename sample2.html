@@ -1,0 +1,55 @@
+<head>
+	<script type="text/javascript">
+	window.IntentMediaProperties = {  
+	
+	/* Site identification parameters */
+		site_name: 'TEST_PIE',				
+		site_country: 'US',		
+		site_language: 'en',		
+		site_currency: 'USD',		
+	/*  Generic search parameters */
+		travel_date_start: '20170801',	
+		travel_date_end: '20170803',	
+		travelers: '2',	               
+ 
+	/* Flight parameters */
+		page_id: 'flight.list',		
+		trip_type: 'roundtrip', 	                
+		flight_origin: 'lax',		
+		flight_destination: 'sea'
+		
+	///* Hotel Parameters */
+	//	page_id: 'hotel.list',
+	//	hotel_city: 'Chicago',
+	//	hotel_state: 'IL',
+	//	hotel_country: 'US',
+	//	hotel_rooms: '1'			
+
+		
+	};
+	(function() {
+	var script = document.createElement("script");
+	var url = 'https://a.cdn.intentmedia.net/javascripts/v1/intent_media_core.js';
+	script.src = url;
+	script.async = true;
+	document.getElementsByTagName("head")[0].appendChild(script);
+	}());
+	</script>
+	</head>
+<title>A Test Page</title>	
+<h1>HELLO HACKERY WORLD</h1>
+<h2>This is a test page</h2>
+<body>
+<h1>A Test Page</h1>
+<p>Lorum Ipsum</p>
+<li>Top Card</li>
+<div id="IntentMediaTopCard" style="width:500px"></div>
+<li>Intercard 1</li>
+<div id='IntentMediaIntercard1' style="width:500px"></div>
+<li>Slim Card</li>
+<div id="IntentMediaSlimCard" style="width:500px"></div>
+<li>Intercard2</li>
+<div id='IntentMediaIntercard2' style="width:500px"></div>
+<li>Rail</li>
+<div id="IntentMediaRail" style="width:200px"></div>
+</body>
