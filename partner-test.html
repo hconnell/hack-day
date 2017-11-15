@@ -19,7 +19,7 @@
 	window.IntentMediaProperties = {  
 	
 	/* Site identification parameters */
-		site_name: 'CHEAPTICKETS_BEX',				
+		site_name: 'TEST_PIE_HC',				
 		site_country: 'US',		
 		site_language: 'en',		
 		site_currency: 'USD',
@@ -31,11 +31,11 @@
 		travelers: '2',	             
  
 	/* Flight parameters */
-		page_id: 'flight.confirmation',		
+		page_id: 'flight.list',		
 		trip_type: 'roundtrip', 	                
 		flight_origin: 'lax',		
-		flight_destination: 'sea',
-		order_id: "TESTTESTTEST",
+		flight_destination: 'sea'
+	/*	order_id: "TESTTESTTEST",
 		total_conversion_value: '100.00',
 		conversion_value: '100.00'
 		
@@ -50,7 +50,7 @@
 	};
 	(function() {
 	var script = document.createElement("script");
-	var url = 'https://a.cdn.intentmedia.net/javascripts/intent_media_cheaptickets_bex_conversions.js';
+	var url = 'https://a.cdn.intentmedia.net/javascripts/v1/intent_media_core.js';
 	script.src = url;
 	script.async = true;
 	document.getElementsByTagName("head")[0].appendChild(script);
@@ -76,13 +76,13 @@
 		<div class="content">
 			<div class="container">
 				<div class="main">
-					<h1>CHEAPTICKETS CONVERSION TEST</h1>
+					<h1>SUPRESSION TEST</h1>
 					<hr>
 
 	
 <h2>Ad Unit Tests</h2>
 
-<h4>This is currently configured to test an Intentless Flights XU using coreg </h4>
+<!--><h4>This is currently configured to test an Intentless Flights XU using coreg </h4>
 	<script type="text/javascript">
 	(function() {
 	var script = document.createElement("script");
@@ -91,10 +91,10 @@
 	script.async = true;
 	document.getElementsByTagName("head")[0].appendChild(script);
 	}());
-</script>	
+</script>	!-->
 <!--<h3>Fly.com Back Unit</h3>
 <a href="https://www.fly.com/flightresults?searchKey=01DE3ze713ab3d8b414eab8e766cdba325b307&origin=NYC&destination=LON&departDate=08%2F14%2F2017%2000%3A00%3A00&departTime=Anytime&returnDate=08%2F17%2F2017%2000%3A00%3A00&returnTime=Anytime&timestamp=07%2F14%2F2017%2015%3A01%3A03&originNearby=True&destinationNearby=True&isRoundTrip=True&tripType=R&adults=1&children=0&infants=0&infantsOnLap=0&seniors=0">Click here</a> to go to a Fly.com list page to test a back unit
-<hr> 
+<hr> !-->
 <h3>Top Card</h3>
 <div id="IntentMediaTopCard" style="width:500px"></div>
 <hr>
