@@ -44,13 +44,18 @@
 		hotel_city: 'Chicago',
 		hotel_state: 'IL',
 		hotel_country: 'US',
-		hotel_rooms: '1'			
+		hotel_rooms: '1',
+		prior_purchase_flag: 'Y',
+		sign_up_flag: 'N',
+		search_flag: 'Y',
+		search_with_dates_flag: 'Y',
+		contact_flag: 'N'			
 
 		
 	};
 	(function() {
 	var script = document.createElement("script");
-	var url = 'https://a.cdn.intentmedia.net/javascripts/intent_media_meta_conversions.js';
+	var url = 'https://a.cdn.intentmedia.net/javascripts/v1/intent_media_core.js';
 	script.src = url;
 	script.async = true;
 	document.getElementsByTagName("head")[0].appendChild(script);
